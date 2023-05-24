@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodyPlaza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bd-color-ffe9cb">
+        <nav>
+            <div class="logo">
+                <a href="#">FoodyPlaza</a>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="togglemenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="row odd bd-color-ffe9cb">
+            <div class="col-t">
+                <h2>Get your favourite food at your doorstep</h2>
+                <button type="button">Order Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-i">
+                <img class="backwidth" img src="back.png" alt="img" />
+            </div>
+        </section>
+
+        <section class="row-sep">
+            <h2>Why FoodyPlaza?</h2>
+            <div class="cols">
+                <div class="col-1">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>Fresh Foods</p>
+                </div>
+                <div class="col-2">
+                    <i class="fa-solid fa-indian-rupee"></i>
+                    <p>Get 10% Cashback on First Order</p>
+                </div>
+                <div class="col-3">
+                    <i class="fa-regular fa-face-smile-beam"></i>
+                    <p>Reasonable Price</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Fast Delivery</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row even bd-color-fffaf3">
+            <div class="col-i m">
+                <img class="imgwidth" src="1.jpg" alt="">
+            </div>
+            <div class="col-t m">
+                <h1>Chicken is our specialty</h1>
+                <p>We take particular care when selecting the ingredients for our range of chicken meals. From fresh
+                chicken to the salads and bread we procure and prepare the food ingredients on daily basis.
+                </p>
+               <p> We pride ourselves in the high quality of our food and offer a money back guarantee if you are not satisfied with the
+                    quality of our products.</p>
+                <button type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="row odd">
+            <div class="col-t m">
+                <h3>Fried Chicken Pieces and Chips</h3>
+                <p>Fried succulent pieces of chicken available on packages of 2, 3 or 6 pieces and a range of meal packages.</p>
+                <button type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-i m">
+                <img class="img2width"img src="2.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="row even bd-color-fffaf3">
+            <div class="col-i m">
+                <img class="imgwidth" src="3.jpg" alt="">
+            </div>
+            <div class="col-t m">
+                <h1>Fancy Chicken Burger?</h1>
+                <p>Fancy a juicy burger? Enjoy our chicken filler burger made from 100% chicken breast and cooked to perfection, served on
+                a soft bun and a bed of fresh salad and mayonnaise.
+                </p>
+                <button type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="row odd">
+            <div class="col-t m">
+                <h3>How hungry are you?</h3>
+                <p>From meals to light bites we provide our tasty portions in different sizes and ingredients.
+                </p>
+                <button type="button">Order Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-i m">
+                <img class="imgwidth imgHeight" src="4.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="explore">
+            <button type="button">Explore more</button>
+        </section>
+        <section class="row-end">
+            <div>
+                <h2>1M+</h2>
+                <p>Order Delivered</p>
+            </div>
+            <div>
+                <h2>91%</h2>
+                <p>Positive Feedback</p>
+            </div>
+            <div>
+                <h2>54</h2>
+                <p>Cities</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>&copy; 2023 FoodyPlaza</p>
+            <div class="social">
+
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

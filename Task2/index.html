@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="bd-color-ffe9cb">
+        <nav>
+            <div class="logo">
+                <a href="#">NILESH KUNDU</a>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="#section1">Home</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="#section3">Skills</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="#section4">Portfolio</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="#section5">Contact</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+
+        <section class="row-1" id="section1">
+            <div class="col-1">
+                <h4>Hello, I am</h4>
+                <h2>NILESH KUNDU</h2>
+                <h3>a fullstack Web Developer</h3>
+                <button type="button">Download My CV</button>
+            </div>
+            <div class="col-2">
+                <img src="nilesh.jpg" alt="img" />
+            </div>
+        </section>
+
+        <section class="row-2" id="section2">
+            <h2>About me</h2>
+            <div class="components">
+                <div class="col-1">
+                    <img src="nilesh.jpg" alt="img" />
+                </div>
+                <div class="col-2">
+                    <p>I am a MCA student at Jadavpur University. I have always been passionate about technology and computers and
+                    had a keen interest to solve problems and make people's lives better. I have got experience in wide range of programming
+                    languages and platforms, and I always stay excited to learn new technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-3" id="section3">
+            <h2>Skills</h2>
+            <div class="components">
+                <div class="subcomponents">
+                <div class="skills"><img src="skills/C.png" alt=""></div>
+                <div class="skills"><img src="skills/c++.png" alt=""></div>
+                <div class="skills"><img src="skills/py.png" alt=""></div>
+                <div class="skills"><img src="skills/html.png" alt=""></div>
+               
+                </div>
+                <div class="subcomponents">
+                <div class="skills"><img src="skills/css.png" alt=""></div>
+                <div class="skills"><img src="skills/js.png" alt=""></div>
+                <div class="skills"><img src="skills/icons8-node-js-48.png" alt=""></div>
+                <div class="skills"><img src="skills/icons8-mongodb-48.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-4" id="section4">
+            <h2>Portfolio</h2>
+            <div class="subrow">
+                <div class="col">
+                    <img src="2.jpg" alt="">
+                    <p>Web Development</p>
+                    <h4>New Portfolio design</h4>
+                    <a href="#">View Details...</a>
+                </div>
+                <div class="col">
+                    <img src="3.jpg" alt="">
+                    <p>Web Development</p>
+                    <h4>New Portfolio design</h4>
+                    <a href="#">View Details...</a>
+                </div>
+                <div class="col">
+                    <img src="4.jpg" alt="">
+                    <p>Web Development</p>
+                    <h4>New Portfolio design</h4>
+                    <a href="#">View Details...</a>
+                </div>
+            </div>
+        </section>
+        <section class="row-5" id="section5">
+            <h2>Contact</h2>
+            <form class="input" action="">
+                <input type="text" class="input-items" placeholder="Full name">
+                <input type="email" class="input-items" placeholder="Email address">
+                <input type="text" class="input-items" placeholder="Subject of The Message">
+                <textarea name="" class="input-items" id="message" cols="100" rows="5" placeholder="Type your message here..."></textarea>
+                <button type="submit" id="button">Send Message <i class="fa-solid fa-face-smile"  style="color: yellow;"></i></button>
+            </form>    
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>&copy; 2023 Nilesh_kundu</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
